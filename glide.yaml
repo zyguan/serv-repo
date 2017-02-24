@@ -1,0 +1,16 @@
+package: github.com/zyguan/serv-repo
+import:
+- package: github.com/gorilla/mux
+- package: github.com/hashicorp/golang-lru
+- package: github.com/zyguan/just
+- package: golang.org/x/crypto/ssh
+- package: srcd.works/go-git.v4
+  subpackages:
+  - plumbing
+  - plumbing/object
+  - plumbing/transport
+  - plumbing/transport/ssh
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
