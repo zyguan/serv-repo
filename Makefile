@@ -1,4 +1,7 @@
-.PHONY: test deps clean
+.PHONY: build test deps clean
+
+build:
+	go build
 
 test:
 	go test -v $(glide novendor)
